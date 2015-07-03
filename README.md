@@ -47,7 +47,15 @@ I have also included a LAMP Stack set up script which I have written which works
 #####How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu:
 * [LAMP for Ubunut on Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
 
+#####Or use my script to do the dirty work for you!
+
 #####Reid's LAMP Vagrant Script:
+
+* [Reid's LAMP Vagrant Script](https://gist.github.com/reidcooper/8a9dc24667a313e236a6
+)
+
+===
+
 1. Make sure in Project Directory which is shared in the vagrant machine
 2. `vagrant ssh`
 3. cd into the /vagrant directory
@@ -55,9 +63,8 @@ I have also included a LAMP Stack set up script which I have written which works
 5. Default Passwords for everything is root & password
 6. Restart Machine (`exit`, `vagrant halt`, `vagrant up`)
 
-=====
-* [Reid's LAMP Vagrant Script](https://gist.github.com/reidcooper/8a9dc24667a313e236a6
-)
+===
+
 * MYSQL:
 `root`
 `password`
@@ -65,13 +72,14 @@ I have also included a LAMP Stack set up script which I have written which works
 `root`
 `password`
 
-#####Symlink /vagrant folder to /var/www/html/ directory:
-* `sudo ln -s /vagrant/ /var/www/html/vagrant`
 
-#####Random Notes: 
+
+#####Random Notes:
 * http://localhost:8080/
 * http://localhost:8080/vagrant/
 * `ifconfig eth0 | grep inet | awk '{ print $2 }'`
+* Symlink /vagrant folder to /var/www/html/ directory:
+	* `sudo ln -s /vagrant/ /var/www/html/vagrant`
 
 #####Sources:
 * [Coolest Guides on the Planet](http://coolestguidesontheplanet.com/getting-started-vagrant-os-osx-10-9-mavericks/)
